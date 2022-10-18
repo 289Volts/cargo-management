@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .sector-heading::before {
+	content: url("/public/arrow.svg");
+	position: absolute;
+    width: 20px;
+}
+
+.sector-heading {
+	position: relative;
+} */
