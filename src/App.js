@@ -1,143 +1,250 @@
 import "./App.css";
+import "flowbite";
+import "flowbite-react";
+import { Carousel, Navbar, Button } from "flowbite-react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// AOS.init({ duration: 2000 });
 
 function App() {
 	return (
-		<div className="mx-auto ">
-			<section className="p-4 h-screen flex flex-col gap-4 text-white bg-[#021639]">
-				<div className=" hero-section__text-content order-2 text-center flex flex-col gap-4">
-					<h1 className="font-playfair hero-section__heading text-[1.8rem] font-bold leading-[1.4]">
+		<div className="font-workSans text-[0.875rem]">
+			<header className="">
+				<div className="tab-navbar hidden lg:block flex justify-between items-center px-6 py-4 fixed top-0 left-0 right-0 text-white">
+					<span className=" text-xl font-semibold dark:text-white">LOGO</span>
+					<nav className="">
+						<ul className="flex space-x-14 text-[1.2rem]">
+							<li className="">
+								<a className="py-[0.3rem]" href="index.html">
+									Home
+								</a>
+							</li>
+							<li className="">
+								<a className="py-[0.3rem]" href="#services">
+									Our Services
+								</a>
+							</li>
+							<li className="">
+								<a className="py-[0.3rem]" href="#about">
+									About
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<button
+						className="hero-section__cta py-[0.45rem] px-3 bg-[#073099] rounded-[4px] font-bold text-white "
+						href="contact.html"
+					>
+						Contact Us
+					</button>
+				</div>
+				<Navbar fluid={true} rounded={true} className=" lg:hidden rounded-none z-50 fixed top-0 w-[100vw]">
+					<Navbar.Brand href="https://flowbite.com/">
+						<span className=" text-xl font-semibold dark:text-white">LOGO</span>
+					</Navbar.Brand>
+					<div className="flex md:order-2">
+						<Button className="mr-3 md:mr-0 text-[0.8rem] font-bold bg-[#073099]">Contact Us</Button>
+						<Navbar.Toggle />
+					</div>
+					<Navbar.Collapse>
+						<Navbar.Link href="index.html" active={true}>
+							Home
+						</Navbar.Link>
+						<Navbar.Link href="#about">About</Navbar.Link>
+						<Navbar.Link href="#services">Our Services</Navbar.Link>
+					</Navbar.Collapse>
+				</Navbar>
+			</header>
+			<section className="hero-section p-4 h-[80vh] flex flex-col gap-4 pt-[6rem] text-white md:flex w-full md:h-[60vh]">
+				<div className=" hero-section__text-content order-2 flex flex-col gap-4 md:w-[60%]">
+					<h1 className="hero-section__heading text-[2.25rem] font-bold leading-[1.2] md:text-[3.5rem]">
 						Cargo Management Made Real Easy
 					</h1>
-					<p className="font-jarkata hero-section__subtitle text-[1.1rem] font-medium ">
+					<p className="hero-section__subtitle text-[0.875rem] font-medium">
 						Most efficient and simplest way to manage your imported cargo completely hassle free
 					</p>
 					<a
-						className="hero-section__cta py-3 px-8 bg-[#54b862] rounded-full font-medium text-white mx-auto w-[fit-content]"
+						className="hero-section__cta py-[0.5rem] px-4 mt-4 bg-white rounded-sm font-bold text-[#073099] w-[fit-content] md:mt-0"
 						href="contact.html"
 					>
 						Contact Us
 					</a>
 				</div>
-				<img src="../freight-management.jpg" alt="delivery management" className="" />
-				{/* <img src="../freight-management.jpg" alt="" /> */}
 			</section>
-			<section className="industries text-center flex flex-col gap-4 mb-8">
-				<div className="industries__sectors  flex flex-col gap-2">
-					<div className="sector p-7 shadow-md">
-						<h2 className="sector-heading ">Food and Beverages</h2>
-						<p className="sector-text">
-							We provide services for individuals and companies who engage in food production and importation with a
-							need to ship in food products.
-						</p>
+			<section className="industries text-center md:text-left flex flex-col gap-4 mb-8 p-7">
+				<h2 className="industries-heading text-[1.2rem] heading hidden md:block md:text-[2.2rem] text-center md:mb-0">
+					Industries We Service
+				</h2>
+				<p className="industries-copy flex flex-col hidden md:block text-center">
+					We are trusted to provide professional cargo manage services to the following industries across the nation to
+					suit their immediate cargo needs.
+				</p>
+				<div className="md:grid md:gap-8 md:grid-cols-2">
+					<div className="industries__sectors  flex flex-col gap-2" data-aos="fade-up">
+						<div className="sector p-7 md:px-0 px-10 shadow-md">
+							<h2 className="sector-heading text-[1.2rem] heading ">Food and Beverages</h2>
+							<p className="sector-text">
+								We provide services for individuals and companies who engage in food production and importation with a
+								need to ship in food products.
+							</p>
+						</div>
+						<div className="sector p-7 md:px-0 px-10 shadow-md">
+							<h2 className="sector-heading text-[1.2rem]  heading ">Electronics and Gadgets</h2>
+							<p className="sector-text">
+								We provide services for individuals and companies who engage in the importation of household and
+								electronics, gadgets, computers, phones etc.
+							</p>
+						</div>
 					</div>
-					<div className="sector p-7 shadow-md">
-						<h2 className="sector-heading ">Fashion</h2>
-						<p className="sector-text">
-							We provide services for individuals and companies who engage in the importation of fabrics, bags, shows
-							and other fashion accessories.
-						</p>
+					<div className="industries__sectors  flex flex-col gap-2  overflow-x-hidden" data-aos="fade-up">
+						<div className="sector p-7 md:px-0 px-10 shadow-md">
+							<h2 className="sector-heading text-[1.2rem]  heading ">Fashion</h2>
+							<p className="sector-text">
+								We provide services for individuals and companies who engage in the importation of fabrics, bags, shoes
+								and other fashion accessories.
+							</p>
+						</div>
+						<div className="sector p-7 md:px-0 px-10 shadow-md">
+							<h2 className="sector-heading text-[1.2rem]  heading ">Automobile</h2>
+							<p className="sector-text">
+								We provide services for individuals and companies who engage in the importation of all kinds of cars,
+								heavy duty and light duty machineries, spare parts and other basic automobile accessories.
+							</p>
+						</div>
 					</div>
 				</div>
-				<div className="industries__sectors  flex flex-col gap-2">
-					<div className="sector p-7 shadow-md">
-						<h2 className="sector-heading ">Automobile</h2>
-						<p className="sector-text">
-							We provide services for individuals and companies who engage in the importation of all kinds of cars,
-							heavy duty and light duty machineries, spare parts and other basic automobile accessories.
-						</p>
-					</div>
-					<div className="sector p-7 shadow-md">
-						<h2 className="sector-heading ">Electronics and Gadgets</h2>
-						<p className="sector-text">
-							We provide services for individuals and companies who engage in the importation of household and
-							electronics, gadgets, computers, phones etc.
-						</p>
-					</div>
-				</div>
-				<div className="industries__text-content flex flex-col gap-4 p-7 shadow-md">
-					<h2 className="industries-heading">Industries We Service</h2>
-					<p className="industries-copy">
+				<div className="industries__text-content p-7  overflow-x-hidden md:p-0" data-aos="fade-left">
+					<h2 className="industries-heading text-[1.2rem] heading md:hidden">Industries We Service</h2>
+					<p className="industries-copy flex flex-col gap-3 md:hidden">
 						We are trusted to provide professional cargo manage services to the following industries across the nation
-						to suite their immediate cargo needs.
+						to suit their immediate cargo needs.
 					</p>
 					<a
-						className="industries__cta py-2 px-8 mx-auto bg-[#54b862] rounded-full w-[fit-content] text-white font-medium"
+						className="hero-section__cta py-[0.5rem] px-5 grid mx-auto mt-4 bg-[#073099] rounded-sm font-bold text-white w-[fit-content] "
 						href="contact.html"
 					>
 						Contact Us
 					</a>
 				</div>
 			</section>
-			<section className="inventory text-center p-4">
-				<div className="inventory-text-content">
-					<h2 className="inventory-heading">Get Proper Inventory For Your Cargo</h2>
-					<p className="inventory-copy">
-						Whether you tack your inventory by batch, in bulk or even by serial number, we are her to ensure you get
+			<section className="inventory p-4 md:py-7">
+				<img src="../image 6.svg" className="mx-auto mb-4 md:hidden" alt="" data-aos="fade-right" />
+				<img className="inventory__image mx-auto mb-4 md:block" src="../about-img-tablet.svg " alt="" />
+				<div className="inventory-text-content md:px-8">
+					<h2 className="inventory-heading text-[1rem] heading  text-center" data-aos="fade-right">
+						Get Proper Inventory For Your Cargo
+					</h2>
+					<p className="inventory-copy mb-4  text-base" data-aos="fade-left">
+						Whether you tack your inventory by batch, in bulk or even by serial number, we are here to ensure you get
 						accurate.
 					</p>
-					<p className="inventory-copy">Accountability and security for your cargo.</p>
-					<p className="inventory-copy">
+					<p className="inventory-copy mb-4 text-base" data-aos="fade-left">
+						Accountability and security for your cargo.
+					</p>
+					<p className="inventory-copy  text-base" data-aos="fade-left">
 						Complete openness to help you monitor your cargo inventory effectively and minimize losses.
 					</p>
 				</div>
-				<img src="../hero-img.jpeg" alt="" />
 			</section>
-			<section className="about text-center p-4 flex flex-col gap-4">
-				<div className="about-text">
-					We have the philosophy that well informed customers are our best customers, and we make every effort to
-					letting you know how our business and logistics work, so you can obtain terms that are fair and that solidly
-					match your needs. We are always one step ahead to ensure the complete satisfaction of our customers no matter
-					what industry or sector you are serving.
+			<section className="about text-white bg-[#07001E] text-center p-5 flex flex-col gap-4 mb-8 text-white">
+				<h2 className="about-heading text-[1.2rem] heading text-white uppercase order-2 md:text-[2.2rem]">About Us</h2>
+				<div className="about-text order-3 md:text-base md:px-10">
+					We always make sure that your cargo and deliveries are treated with utmost priority and we take pride in
+					knowing that we pay close attention to detail and never leave anything to chance. We have the philosophy that
+					well informed customers are our best customers, and we make every effort to letting you know how out business
+					and logistics work, so you can obtain terms that are fair and that solidly match your needs. We love answering
+					customer questions! We are always one step ahead to ensure the complete satisfaction of our customers no
+					matter what industry or sector you are serving.
 				</div>
-				<img src="../snapshot.png" alt="" className="mx-auto " />
+				<img src="../image 5.svg" alt="" className="mx-auto mb-4 order-1 md:hidden" />
+				<img src="../aboutus-img-tablet.svg" alt="" className="mx-auto mb-4 order-1 md:block " />
 			</section>
-			<section className="about-us2 text-center">
-				<h2 className="about-us2__heading">See More About Us</h2>
+			<section className="about-us2 text-center mb-4">
+				<h2 className="about-us2__heading heading text-[1.12rem] uppercase md:text-[2rem]">See More About Us</h2>
 				<div className="about-us2__card-container flex flex-col gap-5">
-					<div className="about-us2__card">
-						<img src="../bullseye.svg" alt="" className='w-[10%] mx-auto' />
-						<h3 className="about-us2__card-heading">Features</h3>
+					<div className="about-us2__card p-7 md:w-[80%] mx-auto" data-aos="flip-left">
+						<img src="../merger.svg" alt="" className="mb-4 mx-auto" />
+						<h3 className="about-us2__card-heading text-[1.2rem] heading">Features</h3>
 						<p className="about-us2__card-copy">
 							Ensure maximum output from your warehouse to achieve roaring success on
-							<span className="font-medium">both B2B</span> and <span className="font-medium">B2C fronts</span> with our
+							<span className="font-bold"> both B2B</span> and <span className="font-bold">B2C fronts</span> with our
 							cargo management software.
 						</p>
 					</div>
-					<div className="about-us2__card">
-						<img src="../bullseye.svg" alt="" className='w-[10%] mx-auto'/>
-						<h3 className="about-us2__card-heading">Industry solutions</h3>
+					<div className="about-us2__card p-7 md:w-[80%] mx-auto" data-aos="flip-right">
+						<img src="../solutions.svg" alt="" className="mb-4 mx-auto" />
+						<h3 className="about-us2__card-heading text-[1.2rem] heading">Industry solutions</h3>
 						<p className="about-us2__card-copy">
 							We satisfy the numerous industries that require the services of a cargo management company.
 						</p>
 					</div>
-					<div className="about-us2__card">
-						<img src="../bullseye.svg" alt="" className='w-[10%] mx-auto'/>
-						<h3 className="about-us2__card-heading">What We Do</h3>
+					<div className="about-us2__card p-7 md:w-[80%] mx-auto" data-aos="fade-zoom-in">
+						<img src="../features.svg" alt="" className="mb-4 mx-auto" />
+						<h3 className="about-us2__card-heading text-[1.2rem] heading ">What We Do</h3>
 						<p className="about-us2__card-copy">
 							We aim to ensure the satisfaction of our clients by providing the ultimate solutions to their cargo needs.
 						</p>
 					</div>
 				</div>
 			</section>
-			<section className="testimonials">
-				<div className="quote">
-					<img src="../double-quotes.svg" alt="" />
-				</div>
-				<h2 className="testimonial-heading">Testimonials</h2>
-				<div className="testimonials-wrapper"></div>
-			</section>
-			<footer>
-				<div className="logo-text">
-					<a href="index.html">LOGO</a>
-					<p className="footer-copy">Simplest, reliable and easy way to secure and manage your cargos effectively.</p>
-					<div className="social-links">
-						<img src="../facebook.svg" alt="facebook page" />
-						<img src="../twitter.svg" alt="twitter page" />
-						<img src="../gmail.svg" alt="email account" />
+			<section className="testimonials py-7">
+				<div className="quote grid relative before:absolute before:w-[100%] before:h-[1px] before:bg-[#07001E] mb-5">
+					<div className="absolute -top-5 mx-auto md:left-[49%] w-[fit-content] p-2 rounded-full bg-[#07001E]">
+						<img src="../double-quotes.svg" alt="" />
 					</div>
 				</div>
-				<div className="company-links">
-					<h2 className="company-links__heading">Company</h2>
+				<h2 className="testimonial-heading heading uppercase text-center">Testimonials</h2>
+
+				<div className="testimonials-wrapper text-center">
+					<div className="testimonial-card w-[87%] mx-auto p-5   italic leading-[1.4] md:w-[55%]">
+						<p>
+							I feel better knowing that I have a place where I can entrust my cargos to when they arrive the country
+							which makes it all easy for me to go about my business till I am ready to offload my goods
+						</p>
+					</div>
+					<div className="h-56 sm:h-64 xl:h-80 2xl:h-96 hidden">
+						<Carousel slideInterval={5000}>
+							<div className="testimonial-card w-[89%] mx-auto p-4 shadow-xl italic leading-[1.3]">
+								<p>
+									I feel better knowing that I have a place where I can entrust my cargos to when they arrive the
+									country which makes it all easy for me to go about my business till I am ready to offload my goods
+								</p>
+							</div>
+							<img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
+							<img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+							<img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+							<img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+							<img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+						</Carousel>
+					</div>
+					<div className="h-56 sm:h-64 xl:h-80 2xl:h-96 hidden">
+						<Carousel slideInterval={5000}>
+							<div className="testimonial-card w-[80%] mx-auto p-7  bg-gray-400 shadow-xl italic leading-[1.3]">
+								<p>
+									I feel better knowing that I have a place where I can entrust my cargos to when they arrive the
+									country which makes it all easy for me to go about my business till I am ready to offload my goods
+								</p>
+							</div>
+							<div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+								Slide 1
+							</div>
+							<div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+								Slide 2
+							</div>
+							<div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+								Slide 3
+							</div>
+						</Carousel>
+					</div>
+				</div>
+			</section>
+			<footer className="flex  flex-col text-center gap-2 py-6 text-white bg-[#07001E] md:grid md:grid-cols-4 md:gap:4 md:text-left md:px-4 md:place-items-center md:pl-[2.7rem]">
+				<div className="logo-text space-y-3 p-5 md:p-0">
+					<a href="index.html">LOGO</a>
+					<p className="footer-copy">Simplest, reliable and easy way to secure and manage your cargo effectively.</p>
+				</div>
+				<div className="company-links flex flex-col mb-5 md:gap-3  md:mb-0">
+					<h2 className="company-links__heading text-white heading text-base">Company</h2>
 					<a href="#about" className="company-links__link">
 						About Us
 					</a>
@@ -148,8 +255,8 @@ function App() {
 						Testimonials
 					</a>
 				</div>
-				<div className="solutions">
-					<h2 className="solution-links__heading">Solutions</h2>
+				<div className="solutions flex flex-col md:gap-3">
+					<h2 className="solution-links__heading text-white heading text-base">Solutions</h2>
 					<a href="#about" className="company-links__link">
 						What we do
 					</a>
@@ -160,10 +267,24 @@ function App() {
 						Features
 					</a>
 				</div>
+
+				<div className="footer-cta grid gap-4 md:flex md:flex-col md:items-center md:justify-center">
+					<a
+						className="hero-section__cta py-[0.45rem] px-3 grid mx-auto mt-4 border-white border-2 bg-[] rounded-[4px] font-bold text-white w-[fit-content] md:mt-0 md:mb-4 md:mx-0"
+						href="contact.html"
+					>
+						Contact Us
+					</a>
+					<div className="social-links flex gap-4 justify-center md:justify-center">
+						<img className="w-[15%]" src="../facebook.svg" alt="facebook page" />
+						<img className="w-[15%]" src="../twitter.svg" alt="twitter page" />
+						<img className="w-[15%]" src="../gmail.svg" alt="email account" />
+					</div>
+				</div>
+				<div className="credits md:col-span-4 md:mt-7">Designed by Udai Promise | Developed by Joshua Roland</div>
 			</footer>
 		</div>
 	);
 }
-
 
 export default App;
