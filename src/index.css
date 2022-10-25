@@ -2,19 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 @media (min-width: 768px) {
-.sector-heading::before {
-	content: url("/public/dot-small.svg");
-	position: absolute;
-    width: 15px;
-	top: 14%;
-	left: -1.5rem;
-}
+	.sector-heading::before {
+		content: url("/public/dot-small.svg");
+		position: absolute;
+		width: 15px;
+		top: 14%;
+		left: -1.5rem;
+	}
 
-.sector-heading {
-	position: relative;
-	text-align: left;
-	margin-left: 1.3rem;
-}
+	.sector-heading {
+		position: relative;
+		text-align: left;
+		margin-left: 1.3rem;
+	}
 }
 
 html {
@@ -25,7 +25,6 @@ html {
 	outline: none;
 }
 .heading {
-	/* font-family: "Playfair Display", serif; */
 	font-weight: 700;
 	margin-bottom: 0.5rem;
 	color: #251c3e;
@@ -37,7 +36,7 @@ html {
 }
 
 .tab-navbar a {
-	transition:all 0.2s ease;
+	transition: all 0.2s ease;
 	opacity: 0.8;
 }
 
@@ -47,19 +46,13 @@ html {
 }
 
 .hero-section {
-	background-image: linear-gradient(to bottom right, #06001b, rgba(245, 246, 252, 0.52)),
-		url("../public/freight-management.jpg");
+	background-image: linear-gradient(to bottom right, #06001b, rgba(93, 99, 135, 0.52)), url("../public/hero-image.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .hero-section__text-content {
-	translate: 0, 50%;
-	transform: translateY(20%);
-}
-
-.hero-section__cta {
-	/* word-spacing: 0.1rem; */
+	translate: 0 14%;
 }
 
 .inventory-copy {
@@ -81,3 +74,23 @@ html {
 footer img {
 	width: 7%;
 }
+
+@media (min-width: 768px) {
+	.hero-section__text-content {
+		translate: 0 8%;
+	}
+}
+@media (min-width: 1024px) {
+	.hero-section__text-content {
+		translate: 0%;
+	}
+
+	.footer-wrapper {
+		translate: 3%;
+	}
+}
+
+@media (min-width: 1200px) {
+
+}
+
