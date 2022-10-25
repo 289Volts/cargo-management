@@ -75,6 +75,12 @@ footer img {
 	width: 7%;
 }
 
+.email {
+	padding-bottom: 0.3rem;
+	transition: 0.3rem ease;
+	border-bottom: 2px solid white;
+}
+
 @media (min-width: 768px) {
 	.hero-section__text-content {
 		translate: 0 8%;
