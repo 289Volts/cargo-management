@@ -2,9 +2,9 @@ import "./App.css";
 import "flowbite";
 import "flowbite-react";
 import { Navbar, Button } from "flowbite-react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// AOS.init({ duration: 2000 });
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ duration: 2000 });
 
 function App() {
 	return (
