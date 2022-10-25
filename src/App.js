@@ -156,7 +156,7 @@ function App() {
 						About Us
 					</h2>
 					<div className="about-text text-justify order-3 md:text-base md:px-10 xl:flex xl:xl:gap-12 xl:items-center xl:px-0">
-						<p>
+						<p className="leading-[2]">
 							We always make sure that your cargo and deliveries are treated with utmost priority and we take pride in
 							knowing that we pay close attention to detail and never leave anything to chance. We have the philosophy
 							that well informed customers are our best customers, and we make every effort to letting you know how out
