@@ -247,7 +247,7 @@ function App() {
 					</div>
 					<div className="footer-cta grid gap-4 md:flex md:flex-col md:items-center md:justify-center md:place-self-start">
 						<a
-							className="hero-section__cta py-[0.45rem] px-3 grid mx-auto mt-4 border-white border-2 bg-[] rounded-[4px] font-bold text-white w-[fit-content] md:mt-0 md:mb-4 md:mx-0 md:text-base"
+							className="hero-section__cta py-[0.45rem] px-3 grid mx-auto mt-4 border-white border-2 rounded-[4px] font-bold text-white w-[fit-content] md:mt-0 md:mb-4 md:mx-0 md:text-base lg:text-[1.3rem] lg:py-3 lg:px-5"
 							href="contact.html"
 						>
 							Contact Us
