@@ -2,9 +2,9 @@ import "./App.css";
 import "flowbite";
 import "flowbite-react";
 import { Navbar, Button } from "flowbite-react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-// AOS.init({ duration: 2000 });
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ duration: 2000 });
 
 function App() {
 	return (
@@ -56,10 +56,10 @@ function App() {
 				className="industries text-center md:text-justify flex flex-col gap-4 mb-8 p-9 lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%] relative xl:pt-[10rem]"
 			>
 				<div className="float xl:flex xl:gap-8">
-					<h2 className="industries-heading text-[1.2rem] heading hidden md:block md:text-[2.2rem] text-center md:mb-0 xl:hidden">
+					<h2 className="industries-heading text-[1.7rem] heading md:text-[2.2rem] text-center md:mb-0 xl:hidden">
 						Industries We Service
 					</h2>
-					<p className="industries-copy flex flex-col hidden md:block text-center md:text-base xl:hidden">
+					<p className="industries-copy flex-col text-center md:text-base xl:hidden">
 						We are trusted to provide professional cargo manage services to the following industries across the nation
 						to suit their immediate cargo needs.
 					</p>
@@ -69,7 +69,7 @@ function App() {
 								<h2 className="sector-heading text-[1.2rem] heading ">Food and Beverages</h2>
 								<p className="sector-text  md:text-base">
 									We provide services for individuals and companies who engage in food production and importation with a
-									need to ship in food products in larger quantities.
+									need to ship in food products.
 								</p>
 							</div>
 							<div className=" sector p-7 md:py-0 px-10 shadow-md">
@@ -98,13 +98,13 @@ function App() {
 						</div>
 					</div>
 					<div
-						className="industries__text-content p-7  overflow-x-hidden md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[50%]"
+						className="industries__text-content p-7 overflow-x-hidden md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[50%]"
 						data-aos="fade-left"
 					>
-						<h2 className="industries-heading text-[1.2rem] heading md:hidden xl:block xl:text-[4.25rem] leading-[1.1]">
+						<h2 className="industries-heading text-[1.2rem] heading hidden xl:block xl:text-[4.25rem] leading-[1.1]">
 							Industries We Service
 						</h2>
-						<p className="industries-copy flex flex-col gap-3 md:hidden xl:block  xl:text-base">
+						<p className="industries-copy gap-3 hidden xl:block  xl:text-base">
 							We are trusted to provide professional cargo manage services to the following industries across the nation
 							to suit their immediate cargo needs.
 						</p>
@@ -126,7 +126,7 @@ function App() {
 				/>
 				<div className="inventory-text-content md:px-8 lg:px-0">
 					<h2
-						className="inventory-heading text-[1rem] heading  text-center xl:text-left xl:text-[2.5rem] xl:leading-[1.1]"
+						className="inventory-heading text-[1.1rem] heading  text-center xl:text-left xl:text-[2.5rem] xl:leading-[1.1]"
 						data-aos="fade-right"
 					>
 						Get Proper Inventory For Your Cargo
@@ -135,7 +135,7 @@ function App() {
 						Whether you tack your inventory by batch, in bulk or even by serial number, we are here to ensure you get
 						accurate.
 					</p>
-					<p className="inventory-copy mb-4 text-base" data-aos="fade-left">
+					<p className="inventory-copy mb-4 text-base" data-aos="fade-right">
 						Accountability and security for your cargo.
 					</p>
 					<p className="inventory-copy  text-base" data-aos="fade-left">
@@ -148,11 +148,11 @@ function App() {
 					alt=""
 				/>
 			</section>
-			<section id="about" className="about text-white bg-[#07001E] text-center p-5  mb-8 text-white">
+			<section id="about" className="about text-white bg-[#07001E] text-center p-5  mb-8 ">
 				<div className="lg:mx-auto lg:w-[80%] lg:px-0 flex flex-col gap-4  xl:w-[65%]">
-					<img src="../image 5.svg" alt="" className="mx-auto mb-4 order-1 md:hidden" />
+					<img src="../image 5.svg" alt="" className="mx-auto order-1 md:hidden" />
 					<img src="../aboutus-img-tablet.svg" alt="" className="mx-auto mb-4 order-1 hidden md:block xl:hidden " />
-					<h2 className="about-heading text-[1.2rem] heading text-white uppercase order-2 md:text-[2.2rem]">
+					<h2 className="about-heading text-[2rem] heading text-white uppercase mb-0 order-2 md:text-[2.2rem]">
 						About Us
 					</h2>
 					<div className="about-text text-justify order-3 md:text-base md:px-10 xl:flex xl:xl:gap-12 xl:items-center xl:px-0">
@@ -169,7 +169,7 @@ function App() {
 				</div>
 			</section>
 			<section className="about-us2 text-center mb-4 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[75%]">
-				<h2 className="about-us2__heading heading text-[1.12rem] uppercase md:text-[2rem]">See More About Us</h2>
+				<h2 className="about-us2__heading heading text-[1.7rem] uppercase md:text-[2rem]">See More About Us</h2>
 				<div className="about-us2__card-container flex flex-col xl:flex-row gap-5">
 					<div className="about-us2__card p-7 md:w-[80%] mx-auto" data-aos="flip-left">
 						<img src="../merger.svg" alt="" className="mb-4 mx-auto" />
@@ -187,7 +187,7 @@ function App() {
 							We satisfy the numerous industries that require the services of a cargo management company.
 						</p>
 					</div>
-					<div className="about-us2__card p-7 md:w-[80%] mx-auto" data-aos="fade-zoom-in">
+					<div className="about-us2__card p-7 md:w-[80%] mx-auto" data-aos="flip-left">
 						<img src="../features.svg" alt="" className="mb-4 mx-auto" />
 						<h3 className="about-us2__card-heading text-[1.2rem] heading ">What We Do</h3>
 						<p className="about-us2__card-copy">
