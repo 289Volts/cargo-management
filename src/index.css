@@ -91,16 +91,20 @@ footer img {
 }
 
 @media (min-width: 1200px) {
+	.hero-section {
+		padding-bottom: 8rem;
+	}
     .float {
 		background-color: white;
     position: absolute;
-    top: -120%;
+    top: -130%;
     padding: 4rem;
     right: -16.7%;
 	}
 
 .hero-section__text-content {
-		translate: 0 20%;
+		translate: 0 0%;
 	}
 }
+
 

@@ -20,13 +20,13 @@ function App() {
 							<Navbar.Toggle />
 						</div>
 						<Navbar.Collapse>
-							<Navbar.Link href="index.html" className="text-[1.2rem]" active={true}>
+							<Navbar.Link href="index.html" className="lg:mr-6 text-[1.2rem]" active={true}>
 								Home
 							</Navbar.Link>
 							<Navbar.Link href="#about" className="text-[1.2rem]">
 								About
 							</Navbar.Link>
-							<Navbar.Link href="#services" className="text-[1.2rem]">
+							<Navbar.Link href="#services" className="lg:ml-6 text-[1.2rem]">
 								Our Services
 							</Navbar.Link>
 						</Navbar.Collapse>
@@ -35,7 +35,7 @@ function App() {
 			</header>
 			<section className="hero-section p-4 h-[70vh] md:h-[auto] md:pb-[5rem] xl:h-[70vh]  flex flex-col gap-4 pt-[6rem] text-white md:flex w-full md:h-[auto] xl:h-[90vh]">
 				<div className="lg:mx-auto lg:w-[80%] xl:w-[75%]">
-					<div className=" hero-section__text-content order-2 flex flex-col gap-4 md:w-[60%] lg:w-[75%] xl:w-[50%]">
+					<div className=" hero-section__text-content order-2 flex flex-col gap-4 md:w-[60%] lg:w-[75%] xl:w-[60%]">
 						<h1 className="hero-section__heading text-[2.25rem] font-bold leading-[1.2] md:text-[3.5rem] lg:text-[4rem]">
 							Cargo Management Made Real Easy
 						</h1>
@@ -51,8 +51,11 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className="industries text-center md:text-justify flex flex-col gap-4 mb-8 p-9 lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%] relative xl:pt-[10rem]">
-				<div className="float xl:flex xl:gap-12">
+			<section
+				id="services"
+				className="industries text-center md:text-justify flex flex-col gap-4 mb-8 p-9 lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%] relative xl:pt-[10rem]"
+			>
+				<div className="float xl:flex xl:gap-8">
 					<h2 className="industries-heading text-[1.2rem] heading hidden md:block md:text-[2.2rem] text-center md:mb-0 xl:hidden">
 						Industries We Service
 					</h2>
@@ -60,16 +63,16 @@ function App() {
 						We are trusted to provide professional cargo manage services to the following industries across the nation
 						to suit their immediate cargo needs.
 					</p>
-					<div className="md:grid md:gap-[2.6rem] md:grid-cols-2 xl:w-[95%]">
-						<div className="industries__sectors  flex flex-col gap-5 " data-aos="fade-up">
-							<div className="sector p-7 md:px-0 px-10 shadow-md">
+					<div className="md:grid md:gap-[1rem] md:grid-cols-2 xl:w-[95%] mt-8">
+						<div className="industries__sectors  flex flex-col gap-4 " data-aos="fade-up">
+							<div className=" sector p-7 md:py-0 px-10 shadow-md">
 								<h2 className="sector-heading text-[1.2rem] heading ">Food and Beverages</h2>
 								<p className="sector-text  md:text-base">
 									We provide services for individuals and companies who engage in food production and importation with a
 									need to ship in food products in larger quantities.
 								</p>
 							</div>
-							<div className="sector p-7 md:px-0 px-10 shadow-md">
+							<div className=" sector p-7 md:py-0 px-10 shadow-md">
 								<h2 className="sector-heading text-[1.2rem]  heading ">Electronics and Gadgets</h2>
 								<p className="sector-text md:text-base">
 									We provide services for individuals and companies who engage in the importation of household and
@@ -77,15 +80,15 @@ function App() {
 								</p>
 							</div>
 						</div>
-						<div className="industries__sectors  flex flex-col gap-3  overflow-x-hidden" data-aos="fade-up">
-							<div className="sector p-7 md:px-0 px-10 shadow-md">
+						<div className="industries__sectors  flex flex-col gap-4  overflow-x-hidden" data-aos="fade-up">
+							<div className=" sector p-7 md:py-0 px-10 shadow-md">
 								<h2 className="sector-heading text-[1.2rem]  heading ">Fashion</h2>
 								<p className="sector-text md:text-base">
 									We provide services for individuals and companies who engage in the importation of fabrics, bags,
 									shoes and other fashion accessories.
 								</p>
 							</div>
-							<div className="sector p-7 md:px-0 px-10 shadow-md">
+							<div className=" sector p-7 md:py-0 px-10 shadow-md">
 								<h2 className="sector-heading text-[1.2rem]  heading ">Automobile</h2>
 								<p className="sector-text md:text-base">
 									We provide services for individuals and companies who engage in the importation of all kinds of cars,
@@ -98,7 +101,7 @@ function App() {
 						className="industries__text-content p-7  overflow-x-hidden md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[50%]"
 						data-aos="fade-left"
 					>
-						<h2 className="industries-heading text-[1.2rem] heading md:hidden xl:block xl:text-[2.1rem] xl:text-center">
+						<h2 className="industries-heading text-[1.2rem] heading md:hidden xl:block xl:text-[4.25rem] leading-[1.1]">
 							Industries We Service
 						</h2>
 						<p className="industries-copy flex flex-col gap-3 md:hidden xl:block  xl:text-base">
@@ -106,7 +109,7 @@ function App() {
 							to suit their immediate cargo needs.
 						</p>
 						<a
-							className="hero-section__cta py-[0.5rem] px-5 grid mx-auto mt-4 bg-[#073099] rounded-sm font-bold text-white w-[fit-content]  xl:text-base"
+							className="hero-section__cta py-[0.5rem] px-5 grid mx-auto mt-4 bg-[#073099] rounded-sm font-bold text-white w-[fit-content]  xl:text-base xl:mx-0 "
 							href="contact.html"
 						>
 							Contact Us
@@ -145,8 +148,8 @@ function App() {
 					alt=""
 				/>
 			</section>
-			<section className="about text-white bg-[#07001E] text-center p-5  mb-8 text-white">
-				<div className="lg:mx-auto lg:w-[80%] lg:px-0 flex flex-col gap-4  xl:w-[75%]">
+			<section id="about" className="about text-white bg-[#07001E] text-center p-5  mb-8 text-white">
+				<div className="lg:mx-auto lg:w-[80%] lg:px-0 flex flex-col gap-4  xl:w-[65%]">
 					<img src="../image 5.svg" alt="" className="mx-auto mb-4 order-1 md:hidden" />
 					<img src="../aboutus-img-tablet.svg" alt="" className="mx-auto mb-4 order-1 hidden md:block xl:hidden " />
 					<h2 className="about-heading text-[1.2rem] heading text-white uppercase order-2 md:text-[2.2rem]">
