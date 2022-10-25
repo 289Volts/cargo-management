@@ -199,7 +199,7 @@ function App() {
 						<img src="../double-quotes.svg" alt="" />
 					</div>
 				</div>
-				<h2 className="testimonial-heading heading uppercase text-center">Testimonials</h2>
+				<h2 className="testimonial-heading heading uppercase text-center md:text-[1.7rem] md:mt-8">Testimonials</h2>
 
 				<div className="testimonials-wrapper text-center">
 					<div className="testimonial-card w-[87%] mx-auto p-5   italic leading-[1.4] md:w-[55%] lg:py-10">
@@ -210,11 +210,11 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<footer className="flex  flex-col text-center gap-2 py-6 text-white bg-[#07001E]  ">
-				<div className=" xl:w-[80%] lg:px-0 md:grid md:grid-cols-4 md:gap:4 md:text-left md:px-4 md:place-items-center md:pl-[2.7rem] footer-wrapper">
+			<footer className="flex  flex-col text-center gap-2 py-9 text-white bg-[#07001E]  ">
+				<div className=" xl:w-[80%] lg:mx-auto lg:px-0 md:grid md:grid-cols-4 md:gap:4 md:text-left md:px-4 md:place-items-center md:pl-[2.7rem] footer-wrapper">
 					<div className="logo-text space-y-3 p-5 md:p-0 md:place-self-start">
 						<a href="index.html">LOGO</a>
-						<p className="footer-copy lg:pr-3">
+						<p className="footer-copy lg:w-[60%]">
 							Simplest, reliable and easy way to secure and manage your cargo effectively.
 						</p>
 					</div>
@@ -244,19 +244,31 @@ function App() {
 					</div>
 					<div className="footer-cta grid gap-4 md:flex md:flex-col md:items-center md:justify-center md:place-self-start">
 						<a
-							className="hero-section__cta py-[0.45rem] px-3 grid mx-auto mt-4 border-white border-2 bg-[] rounded-[4px] font-bold text-white w-[fit-content] md:mt-0 md:mb-4 md:mx-0"
+							className="hero-section__cta py-[0.45rem] px-3 grid mx-auto mt-4 border-white border-2 bg-[] rounded-[4px] font-bold text-white w-[fit-content] md:mt-0 md:mb-4 md:mx-0 md:text-base"
 							href="contact.html"
 						>
 							Contact Us
 						</a>
-						<div className="social-links flex gap-4 justify-center md:justify-center">
-							<img className="md:w-[15%]" src="../facebook.svg" alt="facebook page" />
-							<img className="md:w-[15%]" src="../twitter.svg" alt="twitter page" />
-							<img className="md:w-[15%]" src="../gmail.svg" alt="email account" />
+						<div className="social-links flex gap-4 lg:gap-0 justify-center md:justify-center">
+							<a href="https://facebook.com" className="w-[10%] md:w-[20%] lg:w-[30%]">
+								<img className="w-[70%] md:w-[70%] lg:w-[40%] ml-auto" src="../facebook.svg" alt="facebook page" />
+							</a>
+							<a href="https://twitter.com" className="w-[10%] md:w-[20%] lg:w-[30%]">
+								<img className="w-[70%] md:w-[70%] lg:w-[40%] mx-auto" src="../twitter.svg" alt="twitter page" />
+							</a>
+							<a href="https://gmail.com" className="w-[10%] md:w-[20%] lg:w-[30%]">
+								<img className="w-[70%] md:w-[70%] lg:w-[40%] mr-auto" src="../gmail.svg" alt="email account" />
+							</a>
 						</div>
 					</div>
-					<div className="credits md:col-span-4 md:mt-7 text-[0.8rem]">
-						Designed by Udia Promise | Developed by Joshua Roland
+					<div className="credits mt-4 md:col-span-4 md:mt-9 text-[0.8rem] md:text-base">
+						<a href="mailto:https://udiapromise@outlook.com" className="email mr-1 md:mr-3">
+							Designed by Udia Promise
+						</a>
+						|
+						<a href="mailto:https://joshuaroland289@gmail.com" className="email ml-1 md:ml-3">
+							Developed by Joshua Roland
+						</a>
 					</div>
 				</div>
 			</footer>
