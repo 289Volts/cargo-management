@@ -262,11 +262,11 @@ function App() {
 						</div>
 					</div>
 					<div className="credits mt-4 md:col-span-4 md:mt-9 text-[0.8rem] md:text-base">
-						<a href="mailto:https://udiapromise@outlook.com" className="email mr-1 md:mr-3">
+						<a href="mailto:udiapromise@outlook.com" className="email mr-1 md:mr-3">
 							Designed by Udia Promise
 						</a>
 						|
-						<a href="mailto:https://joshuaroland289@gmail.com" className="email ml-1 md:ml-3">
+						<a href="mailto:joshuaroland289@gmail.com" className="email ml-1 md:ml-3">
 							Developed by Joshua Roland
 						</a>
 					</div>
