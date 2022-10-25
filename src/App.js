@@ -51,17 +51,17 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className="industries text-center md:text-justify flex flex-col gap-4 mb-8 p-9 lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%]">
-				<div className="float">
+			<section className="industries text-center md:text-justify flex flex-col gap-4 mb-8 p-9 lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%] relative xl:pt-[10rem]">
+				<div className="float xl:flex xl:gap-12">
 					<h2 className="industries-heading text-[1.2rem] heading hidden md:block md:text-[2.2rem] text-center md:mb-0 xl:hidden">
 						Industries We Service
 					</h2>
 					<p className="industries-copy flex flex-col hidden md:block text-center md:text-base xl:hidden">
-						We are trusted to provide professional cargo manage services to the following industries across the nation to
-						suit their immediate cargo needs.
+						We are trusted to provide professional cargo manage services to the following industries across the nation
+						to suit their immediate cargo needs.
 					</p>
-					<div className="md:grid md:gap-[2.6rem] md:grid-cols-2">
-						<div className="industries__sectors  flex flex-col gap-3" data-aos="fade-up">
+					<div className="md:grid md:gap-[2.6rem] md:grid-cols-2 xl:w-[95%]">
+						<div className="industries__sectors  flex flex-col gap-5 " data-aos="fade-up">
 							<div className="sector p-7 md:px-0 px-10 shadow-md">
 								<h2 className="sector-heading text-[1.2rem] heading ">Food and Beverages</h2>
 								<p className="sector-text  md:text-base">
@@ -81,8 +81,8 @@ function App() {
 							<div className="sector p-7 md:px-0 px-10 shadow-md">
 								<h2 className="sector-heading text-[1.2rem]  heading ">Fashion</h2>
 								<p className="sector-text md:text-base">
-									We provide services for individuals and companies who engage in the importation of fabrics, bags, shoes
-									and other fashion accessories.
+									We provide services for individuals and companies who engage in the importation of fabrics, bags,
+									shoes and other fashion accessories.
 								</p>
 							</div>
 							<div className="sector p-7 md:px-0 px-10 shadow-md">
@@ -95,21 +95,23 @@ function App() {
 						</div>
 					</div>
 					<div
-						className="industries__text-content p-7  overflow-x-hidden md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[75%]"
+						className="industries__text-content p-7  overflow-x-hidden md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[50%]"
 						data-aos="fade-left"
 					>
-						<h2 className="industries-heading text-[1.2rem] heading md:hidden xl:block">Industries We Service</h2>
-						<p className="industries-copy flex flex-col gap-3 md:hidden xl:block">
+						<h2 className="industries-heading text-[1.2rem] heading md:hidden xl:block xl:text-[2.1rem] xl:text-center">
+							Industries We Service
+						</h2>
+						<p className="industries-copy flex flex-col gap-3 md:hidden xl:block  xl:text-base">
 							We are trusted to provide professional cargo manage services to the following industries across the nation
 							to suit their immediate cargo needs.
 						</p>
 						<a
-							className="hero-section__cta py-[0.5rem] px-5 grid mx-auto mt-4 bg-[#073099] rounded-sm font-bold text-white w-[fit-content] "
+							className="hero-section__cta py-[0.5rem] px-5 grid mx-auto mt-4 bg-[#073099] rounded-sm font-bold text-white w-[fit-content]  xl:text-base"
 							href="contact.html"
 						>
 							Contact Us
 						</a>
-				</div>
+					</div>
 				</div>
 			</section>
 			<section className="inventory p-4 md:py-7 lg:mx-auto lg:w-[80%] lg:px-0 xl:flex xl:gap-8 xl:items-center xl:w-[75%]">

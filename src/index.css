@@ -52,7 +52,7 @@ html {
 }
 
 .hero-section__text-content {
-	translate: 0 14%;
+	translate: 0 5%;
 }
 
 .inventory-copy {
@@ -91,6 +91,16 @@ footer img {
 }
 
 @media (min-width: 1200px) {
+    .float {
+		background-color: white;
+    position: absolute;
+    top: -100%;
+    padding: 4rem;
+    right: -16.7%;
+	}
 
+.hero-section__text-content {
+		translate: 0 20%;
+	}
 }
 
