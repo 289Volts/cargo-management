@@ -12,7 +12,7 @@ function App() {
 			<header className="bg-white z-50 fixed top-0 w-[100vw]">
 				<div className=" lg:mx-auto lg:w-[85%] xl:w-[80%]">
 					<Navbar fluid={true} rounded={true} className="lg:px-0 rounded-none ">
-						<Navbar.Brand href="https://flowbite.com/">
+						<Navbar.Brand href="#">
 							<span className=" text-xl font-semibold dark:text-white">LOGO</span>
 						</Navbar.Brand>
 						<div className="flex md:order-2">
