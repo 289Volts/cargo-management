@@ -23,12 +23,12 @@ function App() {
 			<div className=" fixed top-0 right-0 left-0 font-workSans z-[100]">
 			<div className="relative backdrop h-[55px] md:h-[68px] z-[100]">
 				<header className="fixed top-0 right-0 left-0 flex justify-between items-center py-3 pt-[1.2rem] md:p-0 md:py-3 w-[90%] lg:w-[80%] mx-auto z-[100]">
-					<NavLink to="/" className="hidden md:block">
+					<a href="/" className="hidden md:block">
 						<img src="/images/logo-desktop.png" alt="logo" />
-					</NavLink>
-					<NavLink to="/" className="md:hidden">
+					</a>
+					<a href="/" className="md:hidden">
 						<img src="/images/logo-sm.png" alt="logo" />
-					</NavLink>
+					</a>
 					<div className="flex items-center md:gap-x-[3.5rem]">
 						<nav className="desktop-nav hidden md:block font-medium">
 							<ul className="flex gap-x-[3.5rem] text-white">
