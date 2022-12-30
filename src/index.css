@@ -95,6 +95,10 @@ html {
 	font-size: 0.75rem;
 }
 
+.sector {
+	margin-bottom: 1rem;
+}
+
 .footer-grid {
 	grid-template-columns: 45% 35%;
 }
@@ -135,6 +139,10 @@ font-size: 1.4rem;
 	.inventory-img-sm {
 		display: none;
 	}
+
+	.sector {
+		margin-bottom: 1rem;
+	}
 	
 }
 @media (min-width: 1024px) {
@@ -160,7 +168,7 @@ font-size: 1.4rem;
 	.float {
 		background-color: white;
 		position: absolute;
-		top: -115%;
+		top: -100%;
 		padding: 3rem;
 		right: -16.7%;
 	}

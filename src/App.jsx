@@ -116,9 +116,9 @@ function App() {
 			</section>
 			<section
 				id="services"
-				className="industries text-center md:text-justify flex flex-col gap-4 mb-8 py-9 w-[83%] mx-auto lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%] relative xl:pt-[10rem] xl:text-left"
+				className="industries text-center md:text-justify flex flex-col gap-4 mb-8 py-9 w-[90%] mx-auto lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%] relative xl:pt-[10rem] xl:text-left"
 			>
-				<div className="float xl:flex xl:flex-row-reverse xl:gap-8 xl:justify-start rounded-tl-[12px] rounded-bl-[12px] bg-[#F0F2FF] xl:shadow-md -z-[1] lg:z-10">
+				<div className="float p-5 xl:flex xl:flex-row-reverse xl:gap-8 xl:justify-start rounded-tl-[12px] rounded-bl-[12px] xl:bg-[#F0F2FF] xl:shadow-sm -z-[1] lg:z-10">
 					<h2 className="industries-heading text-[1.25rem] text-headings font-bold md:text-[2.2rem] text-center md:mb-0 xl:hidden">
 						Industries We Service
 					</h2>
@@ -127,8 +127,8 @@ function App() {
 						to suit their immediate cargo needs.
 					</p>
 					<div className="md:grid gap-4 md:gap-[1.5rem] md:grid-cols-2 xl:w-[55%] mt-8 xl:mt-0">
-						<div className="industries__sectors  flex flex-col gap-4 overflow-x-hidden " data-aos="fade-up">
-							<div className="sector p-6 shadow-md">
+						<div className="industries__sectors  flex flex-col gap-4 overflow-x-hidden" data-aos="fade-up">
+							<div className="sector p-6 shadow-sm mb:4 xl:mb-0">
 								<div className="heading-cont ">
 									<img src="./images/fast-food.png" alt="food icon" className="" />
 									<h2 className="sector-heading text-[0.875rem] heading">Food and Beverages</h2>
@@ -138,7 +138,7 @@ function App() {
 									need to ship in food products.
 								</p>
 							</div>
-							<div className=" sector p-6 shadow-md">
+							<div className=" sector p-6 shadow-sm mb:4 xl:mb-0">
 								<div className="heading-cont">
 									<img src="./images/phones.png" alt="fashion icon" className="" />
 									<h2 className="sector-heading heading">Electronics and Gadgets</h2>
@@ -150,7 +150,7 @@ function App() {
 							</div>
 						</div>
 						<div className="industries__sectors  flex flex-col gap-4 overflow-x-hidden" data-aos="fade-up">
-							<div className=" sector p-6 shadow-md">
+							<div className=" sector p-6 shadow-sm mb:4 xl:mb-0">
 								<div className="heading-cont">
 									<img src="./images/fashion-icon.png" alt="fashion icon" className="" />
 									<h2 className="sector-heading heading ">Fashion</h2>
@@ -160,7 +160,7 @@ function App() {
 									shoes and other fashion accessories.
 								</p>
 							</div>
-							<div className=" sector p-6 shadow-md">
+							<div className=" sector p-6 shadow-sm">
 								<div className="heading-cont">
 									<img src="./images/automobile.png" alt="fashion icon" className="" />
 									<h2 className="sector-heading heading ">Automobile</h2>
@@ -173,7 +173,7 @@ function App() {
 						</div>
 					</div>
 					<div
-						className="industries__text-content md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[30%] xl:mr-0 xl:ml-[3rem] overflow-x-hidden"
+						className="industries__text-content md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[40%] xl:mr-0 xl:ml-[3rem] overflow-x-hidden"
 						
 					>
 						<h2 className="industries-heading text-headings font-extrabold hidden xl:block xl:text-[3rem] leading-[1.1] mb-4">
@@ -261,7 +261,7 @@ function App() {
 					complete openness and accountability for every transaction carried out within our jurisdiction
 				</p>
 				<div className="about-us2__card-container flex flex-col md:flex-row gap-4 md:justify-between lg:w-[80%] mx-auto">
-					<div className="about-us2__card px-4 py-[2.25rem] shadow-md mx-auto lg:w-[32%]" data-aos="flip-left">
+					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[32%]" data-aos="flip-left">
 						<img src="/images/people-circle.png" alt="" className="mb-4 mx-auto" />
 						<h3 className="about-us2__card-heading text-[0.875rem] mb-2 font-bold text-headings lg:text-lg">
 							What We Do
@@ -271,7 +271,7 @@ function App() {
 							needs.
 						</p>
 					</div>
-					<div className="about-us2__card px-4 py-[2.25rem] shadow-md mx-auto lg:w-[34%]" data-aos="flip-right">
+					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[34%]" data-aos="flip-right">
 						<img src="/images/bar-chart.png" alt="" className="mb-4 mx-auto" />
 						<h3 className="about-us2__card-heading text-[0.875rem] mb-2 font-bold text-headings lg:text-lg">
 							Industry solutions
@@ -281,7 +281,7 @@ function App() {
 							to keep the business running.
 						</p>
 					</div>
-					<div className="about-us2__card px-4 py-[2.25rem] shadow-md mx-auto lg:w-[35%]" data-aos="flip-left">
+					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[35%]" data-aos="flip-left">
 						<img src="/images/boat.png" alt="" className="mb-4 mx-auto" />
 						<h3 className="about-us2__card-heading text-[0.875rem] mb-2 font-bold text-headings lg:text-lg">
 							Features
