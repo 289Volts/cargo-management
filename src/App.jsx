@@ -14,88 +14,79 @@ function App() {
 	};
 
 	const hide = () => {
-		console.log('work')
+		console.log("work");
 		document.querySelector(".mobile-nav").classList.add("hide");
 	};
 
 	return (
 		<div className="font-workSans text-[0.875rem] overflow-x-hidden">
 			<div className=" fixed top-0 right-0 left-0 font-workSans z-[100]">
-			<div className="relative backdrop h-[55px] md:h-[68px] z-[100]">
-				<header className="fixed top-0 right-0 left-0 flex justify-between items-center py-3 pt-[1.2rem] md:p-0 md:py-3 w-[90%] lg:w-[80%] mx-auto z-[100]">
-					<a href="/" className="hidden md:block">
-						<img src="/images/logo-desktop.png" alt="logo" />
-					</a>
-					<a href="/" className="md:hidden">
-						<img src="/images/logo-sm.png" alt="logo" />
-					</a>
-					<div className="flex items-center md:gap-x-[3.5rem]">
-						<nav className="desktop-nav hidden md:block font-medium">
-							<ul className="flex gap-x-[3.5rem] text-white">
-								<li className="">
-									<a
-										href="/"
-										className="home"
-									>
+				<div className="relative backdrop h-[55px] md:h-[68px] z-[100]">
+					<header className="fixed top-0 right-0 left-0 flex justify-between items-center py-3 pt-[1.2rem] md:p-0 md:py-3 w-[90%] lg:w-[80%] mx-auto z-[100]">
+						<a href="/" className="hidden md:block">
+							<img src="/images/logo-desktop.png" alt="logo" />
+						</a>
+						<a href="/" className="md:hidden">
+							<img src="/images/logo-sm.png" alt="logo" />
+						</a>
+						<div className="flex items-center md:gap-x-[3.5rem]">
+							<nav className="desktop-nav hidden md:block font-medium">
+								<ul className="flex gap-x-[3.5rem] text-white">
+									<li className="">
+										<a href="/" className="home">
+											Home
+										</a>
+									</li>
+									<li className="">
+										<a href="#services" className="">
+											Our Services
+										</a>
+									</li>
+									<li className="">
+										<a href="#about" className="">
+											About Us
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div className="flex flex-col gap-[0.33rem] md:hidden" onClick={showNav}>
+								<span className="w-[28px] h-[3px] bg-white rounded-[4px]"></span>
+								<span className="w-[28px] h-[3px] bg-white rounded-[4px]"></span>
+								<span className="w-[28px] h-[3px] bg-white rounded-[4px]"></span>
+							</div>
+						</div>
+						<a
+							className="hero-section__cta py-[0.6rem] bg-brandPrimary px-5 rounded-[5px] font-semibold text-white hidden md:block md:text-base xl:mx-0 xl:w-[12%] text-center"
+							href="/contact"
+						>
+							Contact Us
+						</a>
+						<nav className="mobile-nav fixed h-screen w-[60%] bg-white left-0 top-0 p-6 pt-[3rem] hide transition-transform duration-[650ms] md:hidden z-10">
+							<div className="flex flex-col gap-[0.33rem] mb-9 cursor-pointer w-[fit-content]" onClick={hideNav}>
+								<span className="w-[28px] h-[3px] bg-black rounded-[4px] -rotate-45 translate-y-2"></span>
+								<span className="w-[28px] h-[3px] bg-black rounded-[4px] rotate-45"></span>
+							</div>
+							<ul className="">
+								<li className="py-3">
+									<a onClick={hide} href="/" className="font-medium mobile-link">
 										Home
 									</a>
 								</li>
-								<li className="">
-									<a
-										href="#services"
-										className=""
-									>
+								<li className="py-3">
+									<a onClick={hide} href="#services" className="font-medium mobile-link">
 										Our Services
 									</a>
 								</li>
-								<li className="">
-									<a
-										href="#about"
-										className=""
-									>
+								<li className="py-3">
+									<a onClick={hide} href="#about" className="font-medium mobile-link">
 										About Us
 									</a>
 								</li>
 							</ul>
 						</nav>
-						<div className="flex flex-col gap-[0.33rem] md:hidden" onClick={showNav}>
-							<span className="w-[28px] h-[3px] bg-white rounded-[4px]"></span>
-							<span className="w-[28px] h-[3px] bg-white rounded-[4px]"></span>
-							<span className="w-[28px] h-[3px] bg-white rounded-[4px]"></span>
-						</div>
-					</div>
-					<a
-						className="hero-section__cta py-[0.6rem] bg-brandPrimary px-5 rounded-[5px] font-semibold text-white hidden md:block md:text-base xl:mx-0 xl:w-[12%] text-center"
-						href="/contact"
-					>
-						Contact Us
-					</a>
-					<nav className="mobile-nav fixed h-screen w-[60%] bg-white left-0 top-0 p-6 pt-[3rem] hide transition-transform duration-[650ms] md:hidden z-10">
-						<div className="flex flex-col gap-[0.33rem] mb-9 cursor-pointer w-[fit-content]" onClick={hideNav}>
-							<span className="w-[28px] h-[3px] bg-black rounded-[4px] -rotate-45 translate-y-2"></span>
-							<span className="w-[28px] h-[3px] bg-black rounded-[4px] rotate-45"></span>
-						</div>
-						<ul className="">
-							<li className="py-3">
-								<a onClick={hide} href="/" className="font-medium mobile-link">
-									Home
-								</a>
-							</li>
-							<li className="py-3">
-								<a onClick={hide} href="#services" className="font-medium mobile-link">
-									Our Services
-								</a>
-							</li>
-							<li className="py-3">
-								<a onClick={hide} href="#about" className="font-medium mobile-link">
-									About Us
-								</a>
-							</li>
-						</ul>
-					</nav>
-				</header>
+					</header>
+				</div>
 			</div>
-		</div>
 			<section className="hero-section h-[290px] md:pb-[5rem] pt-[4.9rem] text-white md:flex w-full md:h-[auto] xl:h-[95vh] lg:pt-[6rem]">
 				<div className="w-[90%] mx-auto md:w-[83%] lg:w-[80%] xl:w-[75%]">
 					<div className=" hero-section__text-content order-2 flex flex-col gap-4 w-[80%] md:w-[80%] lg:w-[80%] lg:gap-8">
@@ -172,10 +163,7 @@ function App() {
 							</div>
 						</div>
 					</div>
-					<div
-						className="industries__text-content md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[40%] xl:mr-0 xl:ml-[3rem] overflow-x-hidden"
-						
-					>
+					<div className="industries__text-content md:p-0 lg:mx-auto lg:w-[80%] lg:px-0 xl:w-[40%] xl:mr-0 xl:ml-[3rem] overflow-x-hidden">
 						<h2 className="industries-heading text-headings font-extrabold hidden xl:block xl:text-[3rem] leading-[1.1] mb-4">
 							Industries We Service
 						</h2>
@@ -320,6 +308,8 @@ function App() {
 				</div>
 			</section>
 			<section className="contact-us w-[83%] mx-auto text-center text-textColor mt-[5rem] mb-[3rem] md:w-[70%] lg:w-[70%]">
+				<img src="/images/CargoSpot-sm.png" alt="cargospot text" className="cargospot-sm" />
+				<img src="/images/CargoSpot-desktop.png" alt="cargospot text" className="cargospot-bg" />
 				<div className="bg-brandSecondary py-5 px-6 rounded-[10px] md:py-[2rem]">
 					<h2 className="text-white font-bold leading-[1.3] lg:w-[65%] mx-auto md:text-base xl:leading-[1.5] xl:text-[2rem]">
 						Get on board with us and start managing your cargos in a smart, simple and reliable way
