@@ -10,7 +10,7 @@ function App() {
 		<div className="font-workSans text-[0.875rem] overflow-x-hidden">
 			<Header />
 
-			<section className="hero-section h-[290px] md:pb-[5rem] pt-[4.8rem] text-white md:flex w-full md:h-[auto] xl:h-[95vh]">
+			<section className="hero-section h-[290px] md:pb-[5rem] pt-[4.9rem] text-white md:flex w-full md:h-[auto] xl:h-[95vh] lg:pt-[6rem]">
 				<div className="w-[90%] mx-auto md:w-[83%] lg:w-[80%] xl:w-[75%]">
 					<div className=" hero-section__text-content order-2 flex flex-col gap-4 w-[80%] md:w-[80%] lg:w-[80%] lg:gap-8">
 						<h1 className="hero-section__heading text-[1.625rem] font-[800] tracking-[1px] leading-[1.2] md:text-[3.5rem] lg:text-[4rem] xl:text-[5rem] lg:leading-[1.1]">
@@ -20,7 +20,7 @@ function App() {
 							Most efficient and simplest way to manage your imported cargo completely hassle free
 						</p>
 						<a
-							className="hero-section__cta py-[0.5rem] px-[0.875rem] bg-brandPrimary text-white rounded-sm font-semibold w-[fit-content] md:mt-0 lg:text-[1.5rem]"
+							className="hero-section__cta py-[0.5rem] px-[0.875rem] bg-brandPrimary text-white rounded-[5px] font-semibold w-[fit-content] md:mt-0 lg:text-[1rem] lg:bg-transparent lg:border-2 lg:border-white lg:w-[18%] text-center"
 							href="contact.html"
 						>
 							Contact Us
@@ -32,7 +32,7 @@ function App() {
 				id="services"
 				className="industries text-center md:text-justify flex flex-col gap-4 mb-8 py-9 w-[83%] mx-auto lg:mx-auto lg:w-[80%] lg:px-0  xl:w-[75%] relative xl:pt-[10rem] xl:text-left"
 			>
-				<div className="float xl:flex xl:flex-row-reverse xl:gap-8 xl:justify-start rounded-tl-[12px] rounded-bl-[12px] bg-[#F0F2FF] xl:shadow-md">
+				<div className="float xl:flex xl:flex-row-reverse xl:gap-8 xl:justify-start rounded-tl-[12px] rounded-bl-[12px] bg-[#F0F2FF] xl:shadow-md -z-[1] lg:z-10">
 					<h2 className="industries-heading text-[1.25rem] text-headings font-bold md:text-[2.2rem] text-center md:mb-0 xl:hidden">
 						Industries We Service
 					</h2>

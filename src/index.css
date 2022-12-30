@@ -6,6 +6,8 @@ html {
 	scroll-behavior: smooth;
 }
 
+
+
 ::-webkit-scrollbar {
 	width: 10px;
   }
@@ -21,6 +23,25 @@ html {
 :focus {
 	outline: none;
 }
+
+.mobile-nav {
+	transition: .65s;
+}
+
+.hide {
+	translate: -166.7% 0;
+}
+
+.home {
+	padding-bottom: 0.2rem;
+	border-bottom: 3px solid #E65503;
+}
+
+.backdrop {
+	background: rgba(101, 99, 99, 0.501);
+	backdrop-filter: blur(8.7px);
+	-webkit-backdrop-filter: blur(8.7px);
+  }
 
 .tab-navbar {
 	background-image: linear-gradient(to bottom right, #06001b 70%, rgba(135, 135, 135, 0.52));
