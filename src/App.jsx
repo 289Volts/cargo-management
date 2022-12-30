@@ -9,7 +9,6 @@ function App() {
 	return (
 		<div className="font-workSans text-[0.875rem] overflow-x-hidden">
 			<Header />
-
 			<section className="hero-section h-[290px] md:pb-[5rem] pt-[4.9rem] text-white md:flex w-full md:h-[auto] xl:h-[95vh] lg:pt-[6rem]">
 				<div className="w-[90%] mx-auto md:w-[83%] lg:w-[80%] xl:w-[75%]">
 					<div className=" hero-section__text-content order-2 flex flex-col gap-4 w-[80%] md:w-[80%] lg:w-[80%] lg:gap-8">
