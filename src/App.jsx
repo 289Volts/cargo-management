@@ -285,7 +285,7 @@ function App() {
 				<div className="quote grid relative mb-5">
 					<div className="mx-auto">
 						
-							<img src="/images/quote-icon.png" alt="quotes icon" className="" />
+							<img src="/images/quote-icon.png" alt="quotes icon" className="quote-img" />
 					</div>
 				</div>
 				<h2 className="testimonial-heading font-extrabold text-[#333333] text-center md:text-[1.7rem] md:mt-8">
