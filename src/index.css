@@ -6,26 +6,24 @@ html {
 	scroll-behavior: smooth;
 }
 
-
-
 ::-webkit-scrollbar {
 	width: 10px;
-  }
+}
 
-  ::-webkit-scrollbar-thumb {
-	background: #E65503;
-  }
+::-webkit-scrollbar-thumb {
+	background: #e65503;
+}
 
-  ::-webkit-scrollbar-button {
-	background: #0A1240;
-  }
+::-webkit-scrollbar-button {
+	background: #0a1240;
+}
 
 :focus {
 	outline: none;
 }
 
 .mobile-nav {
-	transition: .65s;
+	transition: 0.65s;
 }
 
 .hide {
@@ -34,14 +32,15 @@ html {
 
 .home {
 	padding-bottom: 0.2rem;
-	border-bottom: 3px solid #E65503;
+	border-bottom: 3px solid #e65503;
 }
 
 .backdrop {
-	background: rgba(101, 99, 99, 0.501);
+	/* background: rgba(101, 99, 99, 0.501); */
+	background: rgba(111, 120, 206, 0.3);
 	backdrop-filter: blur(8.7px);
 	-webkit-backdrop-filter: blur(8.7px);
-  }
+}
 
 .tab-navbar {
 	background-image: linear-gradient(to bottom right, #06001b 70%, rgba(135, 135, 135, 0.52));
@@ -113,12 +112,15 @@ html {
 	position: relative;
 }
 
-.cargospot-sm, .cargospot-bg {
-position: absolute;
-inset: 0;
-width: 100%;
-top: -25%;
-z-index: -1;
+.cargospot-sm,
+.cargospot-bg {
+	width: 100%;
+}
+
+marquee {
+	inset: 0;
+	top: -25%;
+	z-index: -1;
 }
 
 .cargospot-bg {
@@ -126,17 +128,17 @@ z-index: -1;
 }
 
 @media (max-width: 320px) {
-.hero-section__text-content {
-	width: 100%;
-}
+	.hero-section__text-content {
+		width: 100%;
+	}
 
-.hero-section__heading {
-font-size: 1.4rem;
-}
+	.hero-section__heading {
+		font-size: 1.4rem;
+	}
 
-.sector {
-	padding: 1rem;
-}
+	.sector {
+		padding: 1rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -162,13 +164,16 @@ font-size: 1.4rem;
 
 	.cargospot-sm {
 		display: none;
-		}
-		
-		.cargospot-bg {
+	}
+
+	marquee {
+		top: -35%;
+		z-index: -1;
+	}
+	/* .cargospot-bg {
 			display: block;
 			top: -35%;
-		}
-	
+		} */
 }
 @media (min-width: 1024px) {
 	.hero-section__text-content {
@@ -188,6 +193,9 @@ font-size: 1.4rem;
 	.cargospot-bg {
 		top: -44%;
 	}
+	marquee {
+		top: -44%;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -197,7 +205,7 @@ font-size: 1.4rem;
 	.float {
 		background-color: white;
 		position: absolute;
-		top: -100%;
+		top: -80%;
 		padding: 3rem;
 		right: -16.7%;
 	}
@@ -210,12 +218,16 @@ font-size: 1.4rem;
 	.hero-section__text-content {
 		translate: 0 0%;
 	}
-	
+
 	.inventory-copy {
 		font-size: 1.1rem;
 	}
 
 	.cargospot-bg {
-		top: -40%;
+		/* top: -40%; */
 	}
+
+	marquee {
+		top: -40%;
+		}
 }

@@ -223,7 +223,7 @@ function App() {
 						alt="shipping yard"
 						className="mx-auto hidden w-[50%] md:block xl:mx-0 xl:w-[50%] xl:aspect-[1/0.8]"
 					/>
-					<div className="about-text text-justify order-3 md:text-base xl:w-[40%] xl:px-0" data-aos="fade-right">
+					<div className="about-text text-justify order-3 md:text-base xl:w-[40%] xl:px-0" data-aos="fade-left">
 						<h2 className="about-heading text-headings font-extrabold hidden mb-[1rem] md:block md:text-[2rem] xl:text-[3rem]">
 							What We Stand for
 						</h2>
@@ -240,7 +240,7 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className="about-us2 text-center text-headings mb-4 w-[83%] mx-auto md:w-[90%] lg:mx-auto lg:w-[80%] lg:px-0 xl:mb-[13rem]">
+			<section className="about-us2 text-center text-headings mb-4 w-[83%] mx-auto md:w-[90%] lg:mx-auto lg:w-[80%] lg:px-0 xl:mb-[8rem]">
 				<h2 className="about-us2__heading text-headings mb-2 font-bold md:text-[2rem] lg:font-xtrabold lg:text-[3rem]">
 					Why do business With us?
 				</h2>
@@ -248,8 +248,8 @@ function App() {
 					Get more value for your time and money without stress because of the structures we have put in place to ensure
 					complete openness and accountability for every transaction carried out within our jurisdiction
 				</p>
-				<div className="about-us2__card-container flex flex-col md:flex-row gap-4 md:justify-between lg:w-[80%] mx-auto">
-					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[32%]" data-aos="flip-left">
+				<div className="about-us2__card-container flex flex-col md:flex-row gap-4 md:justify-between lg:w-[87%] mx-auto">
+					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[30%]" data-aos="flip-left">
 						<img src="/images/people-circle.png" alt="" className="mb-4 mx-auto" />
 						<h3 className="about-us2__card-heading text-[0.875rem] mb-2 font-bold text-headings lg:text-lg">
 							What We Do
@@ -259,7 +259,7 @@ function App() {
 							needs.
 						</p>
 					</div>
-					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[34%]" data-aos="flip-right">
+					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[36%]" data-aos="flip-right">
 						<img src="/images/bar-chart.png" alt="" className="mb-4 mx-auto" />
 						<h3 className="about-us2__card-heading text-[0.875rem] mb-2 font-bold text-headings lg:text-lg">
 							Industry solutions
@@ -269,7 +269,7 @@ function App() {
 							to keep the business running.
 						</p>
 					</div>
-					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[35%]" data-aos="flip-left">
+					<div className="about-us2__card px-4 py-[2.25rem] shadow-sm mx-auto lg:w-[37%]" data-aos="flip-left">
 						<img src="/images/boat.png" alt="" className="mb-4 mx-auto" />
 						<h3 className="about-us2__card-heading text-[0.875rem] mb-2 font-bold text-headings lg:text-lg">
 							Features
@@ -281,10 +281,11 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className="testimonials py-7 px-3 w-[83%] mx-auto text-textColor xl:mb-[13rem]">
+			<section className="testimonials py-7 px-3 w-[83%] mx-auto text-textColor xl:mb-[8rem]">
 				<div className="quote grid relative mb-5">
 					<div className="mx-auto">
-						<img src="/images/quote-icon.png" alt="quotes icon" />
+						
+							<img src="/images/quote-icon.png" alt="quotes icon" className="" />
 					</div>
 				</div>
 				<h2 className="testimonial-heading font-extrabold text-[#333333] text-center md:text-[1.7rem] md:mt-8">
@@ -307,11 +308,15 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className="contact-us w-[83%] mx-auto text-center text-textColor mt-[5rem] mb-[3rem] md:w-[70%] lg:w-[70%]">
+			<section className="contact-us w-[83%] mx-auto text-center text-textColor mt-[5rem] mb-[3rem] md:w-[70%] lg:w-[75%]">
+			<marquee behavior="scroll" direction="right" scrollamount="12" className="absolute">
 				<img src="/images/CargoSpot-sm.png" alt="cargospot text" className="cargospot-sm" />
+						</marquee>
+						<marquee behavior="scroll" direction="right" scrollamount="12" className="absolute">
 				<img src="/images/CargoSpot-desktop.png" alt="cargospot text" className="cargospot-bg" />
+						</marquee>
 				<div className="bg-brandSecondary py-5 px-6 rounded-[10px] md:py-[2rem]">
-					<h2 className="text-white font-bold leading-[1.3] lg:w-[65%] mx-auto md:text-base xl:leading-[1.5] xl:text-[2rem]">
+					<h2 className="text-white font-bold leading-[1.1] lg:w-[90%] mx-auto md:text-base xl:leading-[1.5] xl:text-[1.8rem]">
 						Get on board with us and start managing your cargos in a smart, simple and reliable way
 					</h2>
 					<a
