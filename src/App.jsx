@@ -213,7 +213,7 @@ function App() {
 			</section>
 			<section
 				id="about"
-				className="about text-textColor text-center px- w-[83%] mx-auto my-[5rem] md:py-0 md:mx-0 md:w-[87%] lg:w-[94%] xl:mb-[13rem]"
+				className="about text-textColor text-center px- w-[83%] mx-auto my-[5rem] md:py-0 md:mx-0 md:w-[87%] lg:w-[94%] xl:mb-[13rem] py-4"
 			>
 				<h2 className="about-heading text-headings font-extrabold mb-2 md:text-[2rem] md:hidden">What We Stand for</h2>
 				<div className=" lg:px-0 flex flex-col gap-4 md:flex-row md:justify-between md:items-center md:gap-[2rem] xl:w-[100%] xl:justify-start xl:gap-[4rem]">
@@ -281,7 +281,7 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className="testimonials py-7 px-3 w-[83%] mx-auto text-textColor xl:mb-[8rem]">
+			<section className="testimonials py-7 px-3 w-[83%] mx-auto text-textColor mt-[3rem] mb-[7rem] xl:mb-[8rem]">
 				<div className="quote grid relative mb-5">
 					<div className="mx-auto">
 						
@@ -308,11 +308,11 @@ function App() {
 					</div>
 				</div>
 			</section>
-			<section className="contact-us w-[83%] mx-auto text-center text-textColor mt-[5rem] mb-[3rem] md:w-[70%] lg:w-[75%]">
-			<marquee behavior="scroll" direction="right" scrollamount="12" className="absolute">
+			<section className="contact-us w-[83%] mx-auto text-center text-textColor my-[5rem] md:w-[70%] lg:w-[75%]">
+			<marquee behavior="scroll" direction="right" scrollamount="6" className="absolute">
 				<img src="/images/CargoSpot-sm.png" alt="cargospot text" className="cargospot-sm" />
 						</marquee>
-						<marquee behavior="scroll" direction="right" scrollamount="12" className="absolute">
+						<marquee behavior="scroll" direction="right" scrollamount="6" className="absolute">
 				<img src="/images/CargoSpot-desktop.png" alt="cargospot text" className="cargospot-bg" />
 						</marquee>
 				<div className="bg-brandSecondary py-5 px-6 rounded-[10px] md:py-[2rem]">
